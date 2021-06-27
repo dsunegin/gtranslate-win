@@ -61,9 +61,11 @@ You must have installed pm2 process manager to run pm2-gtranslatewin.sh script.
 
 ## *Notice
 
-Fastify hc-pages Plugin used in project is written  for node 14.0 and later.
+In Project Used modified "Fastify hc-pages Plugin" from './@dsunegin/fastify-hc-pages'
 
-To avoid error in node version < 14.0 modify line 90:60 (hc-pages.js):
+Plugin starts real Chrome browser installed on system instead of headless Chromium.   
+
+Also, To avoid error in node version < 14.0 modify line 90:60 (hc-pages.js):
 
 const browser = await puppeteer_1.launch(launchOptions ?? defaultLaunchOptions);
 
