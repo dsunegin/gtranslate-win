@@ -3,6 +3,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "outDir": "build",
+    "allowJs": true,
     "lib": ["DOM","es6"],
     "target": "es6"
   },

@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const tap_1 = require("tap");
 const fastify_1 = __importDefault(require("fastify"));
-const index_1 = require("../src/index");
+const index_1 = require("../src");
 const titleString = 'this is a test title';
 const contentHtml = `<html><head><title>${titleString}</title></head><body></body></html>`;
 async function build(t) {
