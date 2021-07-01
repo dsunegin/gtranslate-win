@@ -81,6 +81,12 @@ const gTranslate = async (sl: string = 'ru', tl: string = 'uk', text: string = '
         if ( tlr.length >0 ) {tl = tlr[0].href;}
 
         const goto_url = `https://perevod.i.ua/${sl}-${tl}/`;
+
+        // Disable Redirect on Page
+        // Modify \windows\system32\drivers\etc\hosts
+        // to prevent AdBlock redirect from site perevod.i.ua :
+        // 127.0.0.1 cdn.admixer.net
+
         await page.goto(goto_url);
         await page.waitForSelector('#first_textarea');
         await page.waitForTimeout(1000);
